@@ -13,5 +13,11 @@ cask "credctl" do
   app "credctl.app"
   binary "#{appdir}/credctl.app/Contents/MacOS/credctl"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/credctl.app"],
+                   sudo: false
+  end
+
   zap trash: "~/.credctl"
 end
