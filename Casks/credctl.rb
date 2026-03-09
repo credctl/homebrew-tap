@@ -1,6 +1,6 @@
 cask "credctl" do
-  version "0.1.0"
-  sha256 "REPLACE_AFTER_FIRST_RELEASE"
+  version "0.1.1"
+  sha256 "3dffc6f78002c840cea1bd9374234dedb6c4e62a438d1a858ff110f8a34a26e3"
 
   url "https://github.com/credctl/credctl/releases/download/v#{version}/credctl-#{version}-darwin-arm64.tar.gz"
   name "credctl"
